@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        body {
+            padding: 5px;
+            height: 999px;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 5px;
+            margin: 10px 0;
+        }
+
+        .cursers {
+            display: flex;
+
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .text {
+            cursor: text;
+        }
+
+        .move {
+            cursor: move;
+        }
+
+        .crosshair {
+            cursor: crosshair;
+        }
+
+        .wait {
+            cursor: wait;
+        }
+
+        .not_allowed {
+            cursor: not-allowed;
+        }
+
+        .grab {
+            cursor: grab;
+        }
+
+        h4 {
+            margin: 2px;
+        }
+
+        .cursers div {
+            word-wrap: break-word;
+            word-break: break-all;
+            width: 10%;
+            text-align: center;
+            padding: 5px;
+            border: 1px dashed black;
+            border-radius: 5px;
+            margin: 5px 0 15px 5px;
+        }
+
+        .backgrounddivs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .backgrounddivs div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            padding: 5px;
+            width: 210px;
+            /* width: 100%; */
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+
+
+
+        .bgcolor1 {
+            background: lightblue;
+        }
+
+        .bgcolor2 {
+            background: lightgreen;
+        }
+
+        .bgcolor3 {
+            background: lightcoral;
+        }
+
+        .background-image {
+            background-image: url(img2.jpg);
+            background-size: cover;
+        }
+
+        .background-repeat {
+            background-image: url(img2.jpg);
+            background-size: contain;
+            /* background-repeat:repeat; */
+        }
+
+        .repeat-x {
+            background-image: url(img2.jpg);
+            background-size: contain;
+            background-repeat: repeat-x;
+        }
+
+        .background-attachment {
+            background-image: url(img2.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .background-position {
+            background-image: url(img2.jpg);
+            background-position: center left;
+            background-size: cover;
+        }
+
+        .background-shorthand {
+            background: url('img2.jpg') repeat-x center/ cover;
+
+        }
+
+        .background-origin {
+            padding: 33px;
+            margin: 15px;
+            background: url(img2.jpg);
+            background-origin: content-box;
+
+        }
+
+        .background-clip {
+            padding: 1000px;
+            margin: 100px;
+            background-clip: padding-box;
+            background: url(img2.jpg);
+
+        }
+
+        .blend-mode {
+
+            background: rgb(173, 239, 231) url(img2.jpg) center/cover;
+            background-blend-mode: multiply;
+        }
+
+        .multiply-backgrounds {
+            background:
+                url(img.jpg) no-repeat center /100%,
+                url(img2.jpg) repeat center/cover;
+            background-blend-mode: multiply;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left"><a href="index12.html">&lt; Privious</a></div>
+        <div class="center">
+            <h2>HTML</h2>
+        </div>
+        <div class="right"><a href="index14.html">Next &gt;</a></div>
+    </nav>
+    <h2>Css Curser and Background Properties Demo</h2>
+    <h4>Curser Styles</h4>
+    <hr>
+    <div class="cursers">
+        <div class="default">default</div>
+        <div class="pointer">pointer</div>
+        <div class="text">text</div>
+        <div class="move">move</div>
+        <div class="crosshair">crosshair</div>
+        <div class="wait">wait</div>
+        <div class="not_allowed">not_allowed</div>
+        <div class="grab">grab</div>
+    </div>
+    <h4>Background Properties</h4>
+    <hr>
+    <div class="backgrounddivs">
+        <div class="bgcolor1">background-color 1</div>
+        <div class="bgcolor2">background-color 2</div>
+        <div class="bgcolor3">background-color 2</div>
+        <div class="background-image">background-image(cover)</div>
+        <div class="background-repeat">background-repeat (pattern)</div>
+        <div class="repeat-x">repeat-x</div>
+        <div class="background-attachment">background-attachment fixed</div>
+        <div class="background-position">background-position</div>
+        <div class="background-shorthand">background-shorthand</div>
+        <div class="background-origin">background-origin</div>
+        <div class="background-clip">background-clip</div>
+        <div class="blend-mode">blend-mode:multiply</div>
+        <div class="multiply-backgrounds">multiply backgrounds</div>
+
+    </div>
+</body>
+
+</html>

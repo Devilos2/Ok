@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           nav {
+            display: flex;
+            justify-content: space-between;
+           
+        }
+         nav a {
+                text-decoration: none;
+                color: black;
+                padding: 5px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+
+<body>
+     <nav>
+        <div class="left"><a href="index6.html">&lt; Privious</a></div>
+        <div class="center">
+            <h2>HTML</h2>
+        </div>
+        <div class="right"><a href="index8.html">Next &gt;</a></div>
+    </nav>
+    <h1>Html Input Fields Demonstration</h1>
+    <p>this page demonstrate various html input fiels without using a form element while form are typicaly used to
+        submit the data input feild can be used independently for various ui interaction </p>
+<form action="">
+    <fieldset>
+        <legend>Text input types</legend>
+
+        <h3>Basic text input </h3>
+        <label for="n">Text input:</label>
+        <input type="text" placeholder="Enter some text" name="" id="n">
+
+        <h3>Password input </h3>
+        <label for="pass">Password input:</label>
+        <input type="password" placeholder="Password" name="" id="pass">
+
+        <h3>Email input </h3>
+        <label for="email">Email input:</label>
+        <input type="email" placeholder="example@gmail.com" name="" id="email">
+
+        <h3>Search input </h3>
+        <label for="search">Search input:</label>
+        <input type="text" placeholder="Search.." name="" id="search">
+
+        <h3>Url input </h3>
+        <label for="url">Url input:</label>
+        <input type="url" placeholder="https://example.com" name="" id="url">
+
+        <h3>Telephone input </h3>
+        <label for="tel">Telephone input:</label>
+        <input type="number" placeholder="123 456 8461" name="" id="tel">
+    </fieldset>
+
+    <fieldset>
+        <legend>Numeric Input types</legend>
+
+        <h3>Number input </h3>
+        <label for="num">number input:</label>
+        <input type="number" name="" id="num">
+
+        <h3>Range slider input </h3>
+        <label for="range">Range slider input:</label>
+        <input type="range" name="" id="range">
+
+        <h3>Date input </h3>
+        <label for="date">Date input:</label>
+        <input type="Date" name="" id="date">
+
+        <h3>Time input </h3>
+        <label for="time">Time input:</label>
+        <input type="time" name="" id="time">
+
+        <h3>Date-Time input </h3>
+        <label for="datetime">Date-Time input:</label>
+        <input type="datetime-local" name="" id="datetime">
+
+        <h3>Month Input</h3>
+        <label for="month">Month Input:</label>
+        <input type="month" id="month">
+
+        <h3>Week Input</h3>
+        <label for="week"></label>
+        <input type="week" id="week">
+    </fieldset>
+
+    <fieldset>
+        <legend>Selection Input Types</legend>
+        <h3>Checkbox Input</h3>
+       
+        <input type="checkbox" name="cbox" value="reading" id="read"> <label for="read">Reading</label> <br>
+
+        <input type="checkbox" name="cbox" value="sports" id="sports"> <label for="sports">Sports</label><br>
+
+        <input type="checkbox" name="cbox" value="music" id="music"> <label for="music">Music</label><br>
+
+        <h3>Radio Input:</h3>
+        <input type="radio" id="m" value="male" name="gen"> <label for="m">Male</label><br>
+        <input type="radio" name="gen" id="f" value="female"><label for="f"> Female</label><br>
+        <input type="radio" name="gen" value="other" id="o"> <label for="o">Other</label>
+
+        <h3>Color Picker</h3>
+        <label for="col">Color Input:</label>
+        <input type="color" id="col" >
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Spicel Input Types</legend>
+        <h3>File Input</h3>
+        <label for="sfile">File Input:</label>
+        <input type="file" name="" id="sfile">
+
+        <h3>Multiple File Input</h3>
+        <label for="mfile">Multiple File:</label>
+        <input type="file" multiple name="" id="mfile">
+        <input type="hidden">
+        
+    </fieldset>
+    <fieldset>
+        <legend>Input Attribute Demonstration</legend>
+        <h3>Required Attribute</h3>
+        <label for="Required">Required Input:</label>
+        <input type="text" placeholder="This feild is Required" id="Required" required >    
+        <h3>Readonly Attribute</h3>
+        <label for="ronly">ReadOnly Attribute:</label>
+        <input type="text" readonly name="" value="This feild connot modifyed" id=""> 
+        <h3>Attribute</h3>
+        <label for="disables">Disabled Attribute</label>
+        <input type="text" disabled name="" id="">
+        <h3>Pattern</h3>
+        <label for="Pattern">Pattern Attribute:</label>
+        <input type="text" pattern="{0-3}" placeholder="138">
+        <h3>Auto Complate</h3>
+        <label for="Autofill">Auto Complate:</label>
+        <input type="text" autocomplete="om sukalpe" name="" id="">
+        <h3>Autofocus Attibute</h3>
+        <label for="Autofocus">Autofocus :</label>
+        <input type="text" autofocus>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Related Output Element</legend>
+        <h3>Output Element</h3>
+        <label for="uot">Output Attibute</label>
+        <input type="text" oninput="" name="" id="">
+        <h3>Progess Element</h3>
+        <input type="range" min="0" max="100"  name="" id="">
+        <h3>meter Element</h3>
+        <label for="meter">Meter Input:</label>
+        <input type="range">
+    </fieldset>
+    
+
+  <button>sub</button>
+  </form>
+
+</body>
+
+</html>

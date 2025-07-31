@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .p1 {
+            padding: 5px;
+            background-color: #deedf0;
+            border: 1px solid black;
+            border-left: 5px solid rgb(124, 185, 211);
+
+        }
+
+        .p1 span {
+            border: 3px dotted red;
+            padding: 0 5px;
+            border-radius: 5px;
+            color: red;
+            font-weight: bold;
+
+        }
+
+        .p2 {
+            padding: 5px;
+            background-color: #e7f3f6;
+            border: 1px solid black;
+            border-left: 5px solid rgb(124, 185, 211);
+        }
+
+        .p2 span {
+            border: 3px dotted red;
+            padding: 0 5px;
+            border-radius: 5px;
+            color: red;
+            font-weight: bold;
+            background-color: #cfeff7;
+            text-shadow: 2px 1px 4px black;
+
+        }
+
+        .p3 {
+            border: 1px solid green;
+            border-radius: 5px;
+            padding: 10px 5px;
+            background-color: #e9fee9;
+        }
+
+        .p4 {
+            border: 3px dashed orange;
+            padding: 10px 5px;
+            background-color: lightyellow;
+        }
+
+        .p5 {
+            border: 3px double solid blue;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 5px black;
+            padding: 10px 5px;
+            background-color: rgb(167, 203, 240);
+        }
+
+        .card1 {
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: rgb(238, 237, 237);
+
+        }
+
+        .card1 b {
+            color: lightblue;
+            text-decoration: underline;
+        }
+
+        .card1_p2 {
+            padding: 5px;
+            border: 1px solid black;
+            background-color: rgba(109, 108, 108, 0.452);
+        }
+
+        .card2 {
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: rgb(238, 237, 237);
+
+        }
+
+        .card1_p1 span {
+            font-weight: bold;
+            text-decoration: underline;
+            color: rgb(98, 166, 189);
+        }
+
+        .card2_p1 span {
+            font-weight: bold;
+            text-decoration: underline;
+            color: rgb(98, 166, 189);
+        }
+
+        .card2_p2 {
+            padding: 5px;
+            border: 1px dotted red;
+            background-color: rgba(244, 163, 163, 0.452);
+        }
+
+        .card {
+            
+            text-align: center;
+            border: 2px dashed;
+            width: 40%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+
+        .d1 {
+            border-color: rgb(173, 38, 83);
+        }
+
+        .d2 {
+            border-color: rgb(208, 191, 37);
+        }
+
+        .d3 {
+            border-color: rgb(173, 38, 83);
+        }
+
+        button {
+            padding: 7px 22px;
+            border: none;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .d1 button {
+            background-color: rgb(173, 38, 83);
+        }
+
+        .d2 button {
+            background-color: rgb(208, 191, 37);
+        }
+
+        .d3 button {
+            background-color: rgb(173, 38, 83);
+        }
+
+
+        .d1 h3 {
+            color: rgb(173, 38, 83);
+        }
+
+        .d2 h3 {
+            color: rgb(208, 191, 37);
+
+        }
+
+        .d3 h3 {
+            color: rgb(173, 38, 83);
+        }
+        .cards h3 
+        {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left"><a href="index11.html">&lt; Privious</a></div>
+        <div class="center">
+            <h2>HTML</h2>
+        </div>
+        <div class="right"><a href="index13.html">Next &gt;</a></div>
+    </nav>
+
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>inline styled text</span> Nam, officia
+        tenetur </p>
+
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>inline styled text</span> Nam, officia
+        tenetur </p>
+
+    <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, officia
+        tenetur </p>
+
+    <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, officia
+        tenetur </p>
+
+    <p class="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, officia
+        tenetur </p>
+    <div class="cards">
+
+        <div class="card1">
+            <h3>Cart Title One</h3>
+            <p class="card1_p1">This is a simple inside the card. it include a <b>highlited word</b> for demonstraion.
+            </p>
+            <p class="card1_p2">This is a small info bocx with a solid border.</p>
+        </div>
+
+        <div class="card2">
+            <h3>Cart Title Two</h3>
+            <p class="card2_p1">This is a simple inside the card. it include a <span>inline span</span> for
+                demonstraion.
+            </p>
+            <p class="card2_p2">This is a small info bocx with a solid border.</p>
+        </div>
+
+        <div class="d1 card">
+            <h3>Flat 30% OFF</h3>
+            <p>On all clothing items above ₹999 </p>
+            <button>SAVE30</button>
+        </div>
+        <div class="d2 card">
+            <h3>Buy 1 Get 1 Free</h3>
+            <p>Applicable on select beverages till july 31</p>
+            <button>B1G1FREE</button>
+        </div>
+        <div class="d3 card">
+            <h3>Free Delivery</h3>
+            <p>On order over ₹499 this weekend</p>
+            <button>FREESHIP</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
